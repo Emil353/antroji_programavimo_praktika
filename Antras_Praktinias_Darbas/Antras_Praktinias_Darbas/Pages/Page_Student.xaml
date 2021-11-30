@@ -1,0 +1,75 @@
+﻿<Page x:Class="Antras_Praktinias_Darbas.Pages.Page_Student"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Antras_Praktinias_Darbas.Pages"
+      mc:Ignorable="d" Title="StudentWindow" Height="800" Width="800">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Colors -->
+        <Rectangle Grid.ColumnSpan="10" Fill="#c6c6c6"/>
+        <Rectangle Grid.Row="1" Grid.RowSpan="9" Grid.ColumnSpan="10" Fill="#e8d789"/>
+        
+        
+        <!-- -->
+        <!-- Header -->
+        <!-- -->
+        <TextBlock x:Name="Text_StudentName" Grid.Column="1" Grid.ColumnSpan="6" Text="Sample Text" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Grid.Column="8" Grid.ColumnSpan="2" Content="LOG OUT" FontSize="20" FontWeight="Bold" Background="#cf4646" Margin="15" Click="BTN_LogOut"/>
+
+        <!-- -->
+        <!-- Main Body -->
+        <!-- -->
+        <!-- Subject Selection -->
+        <TextBlock Grid.Row="2" Grid.ColumnSpan="3" Text="Subject:" FontSize="32" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,15,0"/>
+        <ComboBox x:Name="ComboBox_Subject" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="6" FontSize="26" HorizontalContentAlignment="Center" Margin="10" SelectionChanged="BOX_PickedSubject">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding SubjectName}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <!-- Student Grades -->
+        <ListBox x:Name="ListBox_Grades" Grid.Row="4" Grid.RowSpan="5" Grid.Column="1" Grid.ColumnSpan="8" HorizontalContentAlignment="Stretch" Margin="10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="75*"/>
+                            <ColumnDefinition Width="25*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Text="{Binding Score}"/>
+                        <TextBlock Grid.Column="1" Text="{Binding GradeType}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Page>

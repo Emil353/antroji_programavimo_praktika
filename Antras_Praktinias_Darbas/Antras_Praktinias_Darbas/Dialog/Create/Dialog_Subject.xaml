@@ -1,0 +1,39 @@
+﻿<Window x:Class="Antras_Praktinias_Darbas.Dialog.Dialog_Subject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Title="Dialog_Subject" Height="400" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Header-->
+        <TextBlock Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="4" Text="Create new subject:" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <!-- Main Body -->
+        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Text="Subject name:" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"/>
+
+        <TextBox x:Name="TextBox_SubjectName" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="4" Margin="20"/>
+
+        <Button Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Content="CANCEL" FontSize="20" FontWeight="Bold" Margin="15" Click="BTN_Cancel"/>
+        <Button Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="3" Content="CREATE" FontSize="20" FontWeight="Bold" Margin="15" Click="BTN_CreateNewSubject"/>
+    </Grid>
+</Window>

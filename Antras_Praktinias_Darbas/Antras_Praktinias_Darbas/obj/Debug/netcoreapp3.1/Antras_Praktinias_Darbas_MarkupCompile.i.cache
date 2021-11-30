@@ -1,0 +1,20 @@
+﻿Antras_Praktinias_Darbas
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\Visual Studio\Projects\Antras_Praktinias_Darbas\Antras_Praktinias_Darbas\obj\Debug\netcoreapp3.1\
+Antras_Praktinias_Darbas
+none
+false
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+D:\Visual Studio\Projects\Antras_Praktinias_Darbas\Antras_Praktinias_Darbas\App.xaml
+13-1943892109
+
+22244477144
+193-876396746
+Dialog\Assign\Dialog_AssignStudentToGroup.xaml;Dialog\Assign\Dialog_AssignSubjectToGroup.xaml;Dialog\Assign\Dialog_AssignTeacherToSubject.xaml;Dialog\Create\Dialog_Grade.xaml;Dialog\Create\Dialog_Group.xaml;Dialog\Create\Dialog_Student.xaml;Dialog\Create\Dialog_Subject.xaml;Dialog\Create\Dialog_Teacher.xaml;MainWindow.xaml;Pages\Page_Admin.xaml;Pages\Page_Login.xaml;Pages\Page_Student.xaml;Pages\Page_Teacher.xaml;
+
+True
+
