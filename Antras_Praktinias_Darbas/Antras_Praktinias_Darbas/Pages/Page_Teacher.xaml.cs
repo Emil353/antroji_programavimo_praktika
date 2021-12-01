@@ -5,6 +5,7 @@ using System.Windows.Navigation;
 using Antras_Praktinias_Darbas.SQL;
 using Antras_Praktinias_Darbas.Object;
 using Antras_Praktinias_Darbas.Dialog.Create;
+using Antras_Praktinias_Darbas.Dialog.Change;
 
 namespace Antras_Praktinias_Darbas.Pages {
     public partial class Page_Teacher : Page {
@@ -54,7 +55,24 @@ namespace Antras_Praktinias_Darbas.Pages {
 
             New_Grade.ShowDialog();
         }
+        private void BTN_ChangeGrade(object sender, RoutedEventArgs e) {
+            if (SelectedSubject == null || SelectedGroup == null || SelectedStudent == null)
+                return;
 
+            Grade List_Grade = ListBox_Grades.SelectedItem as Grade;
+
+            if (List_Grade == null)
+                return;
+
+            Dialog_ChangeStudentGrade Update_Grade = new Dialog_ChangeStudentGrade();
+
+            Update_Grade.CurrentGrade = List_Grade;
+            Update_Grade.Student = SelectedStudent;
+            Update_Grade.Subject = SelectedSubject;
+            Update_Grade.Grades = ListBox_Grades;
+
+            Update_Grade.ShowDialog();
+        }
         private void BTN_DeleteGrade(object sender, RoutedEventArgs e) {
             Grade SelectedGrade = ListBox_Grades.SelectedItem as Grade;
             if(SelectedGrade == null) {

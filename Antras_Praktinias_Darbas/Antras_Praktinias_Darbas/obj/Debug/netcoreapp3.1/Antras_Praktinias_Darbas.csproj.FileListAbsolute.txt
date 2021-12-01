@@ -52,3 +52,5 @@ D:\Visual Studio\Projects\Antras_Praktinias_Darbas\Antras_Praktinias_Darbas\obj\
 D:\Visual Studio\Projects\Antras_Praktinias_Darbas\Antras_Praktinias_Darbas\obj\Debug\netcoreapp3.1\Dialog\Create\Dialog_Grade.baml
 D:\Visual Studio\Projects\Antras_Praktinias_Darbas\Antras_Praktinias_Darbas\obj\Debug\netcoreapp3.1\Pages\Page_Student.g.cs
 D:\Visual Studio\Projects\Antras_Praktinias_Darbas\Antras_Praktinias_Darbas\obj\Debug\netcoreapp3.1\Pages\Page_Student.baml
+D:\Visual Studio\Projects\Antras_Praktinias_Darbas\Antras_Praktinias_Darbas\obj\Debug\netcoreapp3.1\Dialog\Change\Dialog_ChangeStudentGrade.g.cs
+D:\Visual Studio\Projects\Antras_Praktinias_Darbas\Antras_Praktinias_Darbas\obj\Debug\netcoreapp3.1\Dialog\Change\Dialog_ChangeStudentGrade.baml

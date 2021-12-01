@@ -16,6 +16,9 @@
     <Compile Update="Dialog\Assign\Dialog_AssignTeacherToSubject.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Dialog\Change\Dialog_ChangeStudentGrade.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Dialog\Create\Dialog_Grade.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -52,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Dialog\Assign\Dialog_AssignTeacherToSubject.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialog\Change\Dialog_ChangeStudentGrade.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Dialog\Create\Dialog_Grade.xaml">

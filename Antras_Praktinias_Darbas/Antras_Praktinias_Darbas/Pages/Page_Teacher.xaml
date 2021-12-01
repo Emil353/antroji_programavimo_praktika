@@ -92,7 +92,8 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <!-- Grade Buttons -->
-        <Button Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="3" Content="CREATE" FontSize="20" FontWeight="Bold" Background="#5bcf46" Margin="10" Click="BTN_CreateNewGrade"/>
-        <Button Grid.Row="8" Grid.Column="6" Grid.ColumnSpan="3" Content="DELETE" FontSize="20" FontWeight="Bold" Background="#cf4646" Margin="10" Click="BTN_DeleteGrade"/>
+        <Button Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" Content="CREATE" FontSize="20" FontWeight="Bold" Background="#5bcf46" Margin="10" Click="BTN_CreateNewGrade"/>
+        <Button Grid.Row="8" Grid.Column="4" Grid.ColumnSpan="2" Content="CHANGE" FontSize="20" FontWeight="Bold" Background="#ffc58e" Margin="10" Click="BTN_ChangeGrade" />
+        <Button Grid.Row="8" Grid.Column="7" Grid.ColumnSpan="2" Content="DELETE" FontSize="20" FontWeight="Bold" Background="#cf4646" Margin="10" Click="BTN_DeleteGrade"/>
     </Grid>
 </Page>

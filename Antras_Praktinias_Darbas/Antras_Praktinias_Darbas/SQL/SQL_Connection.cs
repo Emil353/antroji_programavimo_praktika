@@ -339,6 +339,21 @@ namespace Antras_Praktinias_Darbas.SQL {
                 }
             }
         }
+        public void ChangeGrade(int Id, double NewScore) {
+            string Query = "UPDATE grade SET score = @Value1 WHERE id = @Value2";
+            if (OpenConnection()) {
+                MySqlCommand CMD = new MySqlCommand(Query, Conn);
+                CMD.Parameters.AddWithValue("@Value1", NewScore);
+                CMD.Parameters.AddWithValue("@Value2", Id);
+                try {
+                    CMD.ExecuteNonQuery();
+                } catch (MySqlException e) {
+                    Console.WriteLine(e.ToString());
+                } finally {
+                    _ = CloseConnection();
+                }
+            }
+        }
         public List<Grade> GetStudentGradesFromSubject(int StudentId, int SubjectId) {
             List<Grade> List = new List<Grade>();
             string Query = "SELECT * FROM grade WHERE student_id = @Value1 AND subject_id = @Value2";
@@ -574,10 +589,5 @@ namespace Antras_Praktinias_Darbas.SQL {
 
             return List;
         }
-
-
-
-
-
     }
 }
